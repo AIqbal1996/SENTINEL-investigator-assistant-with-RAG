@@ -1,0 +1,254 @@
+{
+  "timestamp": "2026-11-05T16:37:18Z",
+  "total_transactions_tested": 10,
+  "fraud_transactions_count": 5,
+  "genuine_transactions_count": 5,
+  "http_200_rate_percent": 100.0,
+  "schema_validation_pass_rate_percent": 100.0,
+  "citation_validation_pass_rate_percent": 100.0,
+  "average_latency_seconds": 3.8539,
+  "all_passed": true,
+  "results": [
+    {
+      "transaction_id": "TXN00001",
+      "ground_truth_label": "FRAUD",
+      "http_status": 200,
+      "execution_time_seconds": 4.3934,
+      "schema_validation_passed": true,
+      "citation_validation_passed": true,
+      "response": {
+        "transaction_id": "TXN00001",
+        "risk_summary": "Transaction TXN00001 triggers risk indicators [HIGH_DEVICE_RISK, HIGH_TRANSACTION_AMOUNT, HIGH_TRANSACTION_VELOCITY, NEW_DEVICE, SHARED_SUSPICIOUS_DEVICE, UNUSUAL_LOCATION]. The transaction amount is $8500.00 with customer device signals: Device DEV_999 is shared across 3 distinct customer accounts.; Customer CUST_101 has 2 registered devices in history..",
+        "reason_codes": [
+          "HIGH_DEVICE_RISK",
+          "HIGH_TRANSACTION_AMOUNT",
+          "HIGH_TRANSACTION_VELOCITY",
+          "NEW_DEVICE",
+          "SHARED_SUSPICIOUS_DEVICE",
+          "UNUSUAL_LOCATION"
+        ],
+        "recommended_action": "Freeze account and escalate to senior investigator",
+        "cited_sources": [
+          {
+            "document": "Transaction_Amount_Risk_Policy",
+            "chunk_id": "POL001_CHUNK001"
+          },
+          {
+            "document": "Transaction_Amount_Risk_Policy",
+            "chunk_id": "POL001_CHUNK002"
+          }
+        ]
+      }
+    },
+    {
+      "transaction_id": "TXN00002",
+      "ground_truth_label": "FRAUD",
+      "http_status": 200,
+      "execution_time_seconds": 3.512,
+      "schema_validation_passed": true,
+      "citation_validation_passed": true,
+      "response": {
+        "transaction_id": "TXN00002",
+        "risk_summary": "Transaction TXN00002 triggers risk indicators [HIGH_DEVICE_RISK, HIGH_TRANSACTION_VELOCITY, SHARED_SUSPICIOUS_DEVICE, UNUSUAL_LOCATION]. The transaction amount is $4200.00 with customer device signals: Device DEV_999 is shared across 3 distinct customer accounts..",
+        "reason_codes": [
+          "HIGH_DEVICE_RISK",
+          "HIGH_TRANSACTION_VELOCITY",
+          "SHARED_SUSPICIOUS_DEVICE",
+          "UNUSUAL_LOCATION"
+        ],
+        "recommended_action": "Freeze account and escalate to senior investigator",
+        "cited_sources": [
+          {
+            "document": "Transaction_Amount_Risk_Policy",
+            "chunk_id": "POL001_CHUNK001"
+          },
+          {
+            "document": "Transaction_Amount_Risk_Policy",
+            "chunk_id": "POL001_CHUNK002"
+          }
+        ]
+      }
+    },
+    {
+      "transaction_id": "TXN00003",
+      "ground_truth_label": "FRAUD",
+      "http_status": 200,
+      "execution_time_seconds": 4.1917,
+      "schema_validation_passed": true,
+      "citation_validation_passed": true,
+      "response": {
+        "transaction_id": "TXN00003",
+        "risk_summary": "Transaction TXN00003 triggers risk indicators [HIGH_TRANSACTION_AMOUNT, NEW_DEVICE]. The transaction amount is $12500.00 with customer device signals: Device DEV_888 is dedicated to customer CUST_103..",
+        "reason_codes": [
+          "HIGH_TRANSACTION_AMOUNT",
+          "NEW_DEVICE"
+        ],
+        "recommended_action": "Freeze account and escalate to senior investigator",
+        "cited_sources": [
+          {
+            "document": "Transaction_Amount_Risk_Policy",
+            "chunk_id": "POL001_CHUNK001"
+          },
+          {
+            "document": "Transaction_Amount_Risk_Policy",
+            "chunk_id": "POL001_CHUNK002"
+          }
+        ]
+      }
+    },
+    {
+      "transaction_id": "TXN00004",
+      "ground_truth_label": "FRAUD",
+      "http_status": 200,
+      "execution_time_seconds": 3.4683,
+      "schema_validation_passed": true,
+      "citation_validation_passed": true,
+      "response": {
+        "transaction_id": "TXN00004",
+        "risk_summary": "Transaction TXN00004 triggers risk indicators [HIGH_TRANSACTION_VELOCITY, UNUSUAL_LOCATION]. The transaction amount is $980.00 with customer device signals: Device DEV_777 is dedicated to customer CUST_104..",
+        "reason_codes": [
+          "HIGH_TRANSACTION_VELOCITY",
+          "UNUSUAL_LOCATION"
+        ],
+        "recommended_action": "Step-up identity authentication",
+        "cited_sources": [
+          {
+            "document": "Transaction_Amount_Risk_Policy",
+            "chunk_id": "POL001_CHUNK001"
+          },
+          {
+            "document": "Transaction_Amount_Risk_Policy",
+            "chunk_id": "POL001_CHUNK002"
+          }
+        ]
+      }
+    },
+    {
+      "transaction_id": "TXN00005",
+      "ground_truth_label": "FRAUD",
+      "http_status": 200,
+      "execution_time_seconds": 4.0972,
+      "schema_validation_passed": true,
+      "citation_validation_passed": true,
+      "response": {
+        "transaction_id": "TXN00005",
+        "risk_summary": "Transaction TXN00005 triggers risk indicators [HIGH_DEVICE_RISK, HIGH_TRANSACTION_AMOUNT]. The transaction amount is $6200.00 with customer device signals: Device DEV_666 is dedicated to customer CUST_105.; Customer CUST_105 has 2 registered devices in history..",
+        "reason_codes": [
+          "HIGH_DEVICE_RISK",
+          "HIGH_TRANSACTION_AMOUNT"
+        ],
+        "recommended_action": "Manual review required",
+        "cited_sources": [
+          {
+            "document": "Transaction_Amount_Risk_Policy",
+            "chunk_id": "POL001_CHUNK001"
+          },
+          {
+            "document": "Transaction_Amount_Risk_Policy",
+            "chunk_id": "POL001_CHUNK002"
+          }
+        ]
+      }
+    },
+    {
+      "transaction_id": "TXN00006",
+      "ground_truth_label": "GENUINE",
+      "http_status": 200,
+      "execution_time_seconds": 3.502,
+      "schema_validation_passed": true,
+      "citation_validation_passed": true,
+      "response": {
+        "transaction_id": "TXN00006",
+        "risk_summary": "Transaction TXN00006 is evaluated as low-risk. The transaction amount of $45.50 originates from a known customer device with normal transaction velocity and standard merchant location.",
+        "reason_codes": [],
+        "recommended_action": "Approve transaction",
+        "cited_sources": [
+          {
+            "document": "Genuine_Transaction_Clearance_Policy",
+            "chunk_id": "POL005_CHUNK002"
+          }
+        ]
+      }
+    },
+    {
+      "transaction_id": "TXN00007",
+      "ground_truth_label": "GENUINE",
+      "http_status": 200,
+      "execution_time_seconds": 4.1499,
+      "schema_validation_passed": true,
+      "citation_validation_passed": true,
+      "response": {
+        "transaction_id": "TXN00007",
+        "risk_summary": "Transaction TXN00007 is evaluated as low-risk. The transaction amount of $120.00 originates from a known customer device with normal transaction velocity and standard merchant location.",
+        "reason_codes": [],
+        "recommended_action": "Approve transaction",
+        "cited_sources": [
+          {
+            "document": "Genuine_Transaction_Clearance_Policy",
+            "chunk_id": "POL005_CHUNK002"
+          }
+        ]
+      }
+    },
+    {
+      "transaction_id": "TXN00008",
+      "ground_truth_label": "GENUINE",
+      "http_status": 200,
+      "execution_time_seconds": 3.5792,
+      "schema_validation_passed": true,
+      "citation_validation_passed": true,
+      "response": {
+        "transaction_id": "TXN00008",
+        "risk_summary": "Transaction TXN00008 is evaluated as low-risk. The transaction amount of $15.00 originates from a known customer device with normal transaction velocity and standard merchant location.",
+        "reason_codes": [],
+        "recommended_action": "Approve transaction",
+        "cited_sources": [
+          {
+            "document": "Genuine_Transaction_Clearance_Policy",
+            "chunk_id": "POL005_CHUNK002"
+          }
+        ]
+      }
+    },
+    {
+      "transaction_id": "TXN00009",
+      "ground_truth_label": "GENUINE",
+      "http_status": 200,
+      "execution_time_seconds": 4.1478,
+      "schema_validation_passed": true,
+      "citation_validation_passed": true,
+      "response": {
+        "transaction_id": "TXN00009",
+        "risk_summary": "Transaction TXN00009 is evaluated as low-risk. The transaction amount of $350.00 originates from a known customer device with normal transaction velocity and standard merchant location.",
+        "reason_codes": [],
+        "recommended_action": "Approve transaction",
+        "cited_sources": [
+          {
+            "document": "Genuine_Transaction_Clearance_Policy",
+            "chunk_id": "POL005_CHUNK002"
+          }
+        ]
+      }
+    },
+    {
+      "transaction_id": "TXN00010",
+      "ground_truth_label": "GENUINE",
+      "http_status": 200,
+      "execution_time_seconds": 3.4972,
+      "schema_validation_passed": true,
+      "citation_validation_passed": true,
+      "response": {
+        "transaction_id": "TXN00010",
+        "risk_summary": "Transaction TXN00010 is evaluated as low-risk. The transaction amount of $85.00 originates from a known customer device with normal transaction velocity and standard merchant location.",
+        "reason_codes": [],
+        "recommended_action": "Approve transaction",
+        "cited_sources": [
+          {
+            "document": "Genuine_Transaction_Clearance_Policy",
+            "chunk_id": "POL005_CHUNK002"
+          }
+        ]
+      }
+    }
+  ]
+}

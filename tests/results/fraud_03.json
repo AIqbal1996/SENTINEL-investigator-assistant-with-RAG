@@ -1,0 +1,27 @@
+{
+  "transaction_id": "TXN00003",
+  "ground_truth_label": "FRAUD",
+  "http_status": 200,
+  "execution_time_seconds": 3.5178,
+  "schema_validation_passed": true,
+  "citation_validation_passed": true,
+  "response": {
+    "transaction_id": "TXN00003",
+    "risk_summary": "Transaction TXN00003 triggers risk indicators [HIGH_TRANSACTION_AMOUNT, NEW_DEVICE]. The transaction amount is $12500.00 with customer device signals: Device DEV_888 is dedicated to customer CUST_103..",
+    "reason_codes": [
+      "HIGH_TRANSACTION_AMOUNT",
+      "NEW_DEVICE"
+    ],
+    "recommended_action": "Freeze account and escalate to senior investigator",
+    "cited_sources": [
+      {
+        "document": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK001"
+      },
+      {
+        "document": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK002"
+      }
+    ]
+  }
+}

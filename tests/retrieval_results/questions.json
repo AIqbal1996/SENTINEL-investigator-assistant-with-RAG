@@ -1,0 +1,72 @@
+[
+  {
+    "question_id": "Q01",
+    "question": "What is the threshold for enhanced risk scrutiny on high-value transactions?",
+    "expected_document_id": "POL001",
+    "expected_document_name": "Transaction_Amount_Risk_Policy",
+    "topic": "high_transaction_amount"
+  },
+  {
+    "question_id": "Q02",
+    "question": "When does an extreme transaction value mandate supervisor sign-off and funds hold?",
+    "expected_document_id": "POL001",
+    "expected_document_name": "Transaction_Amount_Risk_Policy",
+    "topic": "extreme_value_escalation"
+  },
+  {
+    "question_id": "Q03",
+    "question": "What protocol is required when a new device has a high risk score exceeding 0.70?",
+    "expected_document_id": "POL002",
+    "expected_document_name": "Device_Fraud_Policy",
+    "topic": "unrecognized_device_risk"
+  },
+  {
+    "question_id": "Q04",
+    "question": "What syndicate action is taken when a device is shared across multiple customer accounts?",
+    "expected_document_id": "POL002",
+    "expected_document_name": "Device_Fraud_Policy",
+    "topic": "shared_device_syndicate"
+  },
+  {
+    "question_id": "Q05",
+    "question": "How many transaction attempts per rolling hour indicate automated bot testing or carding?",
+    "expected_document_id": "POL003",
+    "expected_document_name": "Velocity_And_Frequency_Policy",
+    "topic": "rapid_transaction_velocity"
+  },
+  {
+    "question_id": "Q06",
+    "question": "What automated card blocks occur when transaction velocity exceeds 10 per hour?",
+    "expected_document_id": "POL003",
+    "expected_document_name": "Velocity_And_Frequency_Policy",
+    "topic": "burst_velocity_freeze"
+  },
+  {
+    "question_id": "Q07",
+    "question": "What secondary authorization is required for transactions from high-risk foreign locations?",
+    "expected_document_id": "POL004",
+    "expected_document_name": "Geographic_Location_Policy",
+    "topic": "cross_border_high_risk_location"
+  },
+  {
+    "question_id": "Q08",
+    "question": "How are cross-border foreign currency conversions evaluated for account takeover?",
+    "expected_document_id": "POL004",
+    "expected_document_name": "Geographic_Location_Policy",
+    "topic": "cross_border_conversion_risk"
+  },
+  {
+    "question_id": "Q09",
+    "question": "Under what conditions can low-risk purchases from trusted devices be auto-approved?",
+    "expected_document_id": "POL005",
+    "expected_document_name": "Genuine_Transaction_Clearance_Policy",
+    "topic": "trusted_device_auto_approval"
+  },
+  {
+    "question_id": "Q10",
+    "question": "How can investigators prevent false positive alarms on routine household expenditures?",
+    "expected_document_id": "POL005",
+    "expected_document_name": "Genuine_Transaction_Clearance_Policy",
+    "topic": "false_positive_mitigation"
+  }
+]

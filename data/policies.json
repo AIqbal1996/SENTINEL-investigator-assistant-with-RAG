@@ -1,0 +1,73 @@
+[
+  {
+    "document_id": "POL001",
+    "document_name": "Transaction_Amount_Risk_Policy",
+    "chunk_id": "POL001_CHUNK001",
+    "section": "1.1 High-Value Thresholds",
+    "text": "Transactions equal to or exceeding $5,000.00 require enhanced risk scrutiny. Investigators must verify customer transaction history, source of funds, and merchant legitimacy before clearance."
+  },
+  {
+    "document_id": "POL001",
+    "document_name": "Transaction_Amount_Risk_Policy",
+    "chunk_id": "POL001_CHUNK002",
+    "section": "1.2 Extreme Value Escalation",
+    "text": "Single transactions exceeding $10,000.00 mandate immediate supervisor sign-off and step-up customer verification. Funds must remain held until manual review is completed."
+  },
+  {
+    "document_id": "POL002",
+    "document_name": "Device_Fraud_Policy",
+    "chunk_id": "POL002_CHUNK001",
+    "section": "2.1 Unrecognized Device Alerts",
+    "text": "When a transaction originates from an unrecognized or newly registered device with a risk score exceeding 0.70, the system must trigger a high-risk alert and recommend manual investigator review."
+  },
+  {
+    "document_id": "POL002",
+    "document_name": "Device_Fraud_Policy",
+    "chunk_id": "POL002_CHUNK002",
+    "section": "2.2 Shared Device Syndicates",
+    "text": "Any hardware device ID linked to more than one customer account within a 30-day window indicates potential coordinated fraud syndicate activity. Mandatory freeze on connected accounts."
+  },
+  {
+    "document_id": "POL003",
+    "document_name": "Velocity_And_Frequency_Policy",
+    "chunk_id": "POL003_CHUNK001",
+    "section": "3.1 Rapid Velocity Thresholds",
+    "text": "A transaction velocity exceeding 5 attempts per rolling hour suggests automated bot testing or carding attacks. Investigators must evaluate transaction spacing and decline frequency."
+  },
+  {
+    "document_id": "POL003",
+    "document_name": "Velocity_And_Frequency_Policy",
+    "chunk_id": "POL003_CHUNK002",
+    "section": "3.2 Extreme Burst Velocity",
+    "text": "Transaction velocity exceeding 10 transactions per hour mandates an immediate automated card block and immediate notification to the primary account holder."
+  },
+  {
+    "document_id": "POL004",
+    "document_name": "Geographic_Location_Policy",
+    "chunk_id": "POL004_CHUNK001",
+    "section": "4.1 High-Risk Geographies",
+    "text": "Transactions originating from foreign jurisdictions flagged as high-risk (such as Nigeria, Russia, or Vietnam) without a recorded cardholder travel notice require secondary authorization."
+  },
+  {
+    "document_id": "POL004",
+    "document_name": "Geographic_Location_Policy",
+    "chunk_id": "POL004_CHUNK002",
+    "section": "4.2 Cross-Border Risk Assessment",
+    "text": "Foreign currency conversions paired with sudden high-value transactions must be reviewed for unauthorized account takeover and identity theft indicators."
+  },
+  {
+    "document_id": "POL005",
+    "document_name": "Genuine_Transaction_Clearance_Policy",
+    "chunk_id": "POL005_CHUNK001",
+    "section": "5.1 Trusted Device Auto-Approval",
+    "text": "Transactions made from established trusted devices with normal spending patterns under $500.00 and low velocity should be auto-cleared with zero customer friction."
+  },
+  {
+    "document_id": "POL005",
+    "document_name": "Genuine_Transaction_Clearance_Policy",
+    "chunk_id": "POL005_CHUNK002",
+    "section": "5.2 False Positive Prevention",
+    "text": "Investigators must ensure routine domestic purchases at habitual merchants (e.g., groceries, coffee, standard retail) are cleared promptly to maintain customer satisfaction and minimize false alarms."
+  }
+]
+

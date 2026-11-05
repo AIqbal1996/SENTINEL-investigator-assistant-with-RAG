@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-11-05T16:38:12Z",
+  "total_questions": 10,
+  "total_hits": 10,
+  "total_misses": 0,
+  "hit_at_5_percent": 100.0,
+  "average_search_latency_seconds": 0.0001,
+  "metric_definition": "Hit@5 = (Questions where expected document appears in top 5 / Total Questions) * 100"
+}

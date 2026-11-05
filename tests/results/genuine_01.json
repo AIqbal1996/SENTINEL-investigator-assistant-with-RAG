@@ -1,0 +1,20 @@
+{
+  "transaction_id": "TXN00006",
+  "ground_truth_label": "GENUINE",
+  "http_status": 200,
+  "execution_time_seconds": 4.0707,
+  "schema_validation_passed": true,
+  "citation_validation_passed": true,
+  "response": {
+    "transaction_id": "TXN00006",
+    "risk_summary": "Transaction TXN00006 is evaluated as low-risk. The transaction amount of $45.50 originates from a known customer device with normal transaction velocity and standard merchant location.",
+    "reason_codes": [],
+    "recommended_action": "Approve transaction",
+    "cited_sources": [
+      {
+        "document": "Genuine_Transaction_Clearance_Policy",
+        "chunk_id": "POL005_CHUNK002"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "transaction_id": "TXN00005",
+  "ground_truth_label": "FRAUD",
+  "http_status": 200,
+  "execution_time_seconds": 3.5019,
+  "schema_validation_passed": true,
+  "citation_validation_passed": true,
+  "response": {
+    "transaction_id": "TXN00005",
+    "risk_summary": "Transaction TXN00005 triggers risk indicators [HIGH_DEVICE_RISK, HIGH_TRANSACTION_AMOUNT]. The transaction amount is $6200.00 with customer device signals: Device DEV_666 is dedicated to customer CUST_105.; Customer CUST_105 has 2 registered devices in history..",
+    "reason_codes": [
+      "HIGH_DEVICE_RISK",
+      "HIGH_TRANSACTION_AMOUNT"
+    ],
+    "recommended_action": "Manual review required",
+    "cited_sources": [
+      {
+        "document": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK001"
+      },
+      {
+        "document": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK002"
+      }
+    ]
+  }
+}

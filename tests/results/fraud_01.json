@@ -1,0 +1,31 @@
+{
+  "transaction_id": "TXN00001",
+  "ground_truth_label": "FRAUD",
+  "http_status": 200,
+  "execution_time_seconds": 3.5754,
+  "schema_validation_passed": true,
+  "citation_validation_passed": true,
+  "response": {
+    "transaction_id": "TXN00001",
+    "risk_summary": "Transaction TXN00001 triggers risk indicators [HIGH_DEVICE_RISK, HIGH_TRANSACTION_AMOUNT, HIGH_TRANSACTION_VELOCITY, NEW_DEVICE, SHARED_SUSPICIOUS_DEVICE, UNUSUAL_LOCATION]. The transaction amount is $8500.00 with customer device signals: Device DEV_999 is shared across 3 distinct customer accounts.; Customer CUST_101 has 2 registered devices in history..",
+    "reason_codes": [
+      "HIGH_DEVICE_RISK",
+      "HIGH_TRANSACTION_AMOUNT",
+      "HIGH_TRANSACTION_VELOCITY",
+      "NEW_DEVICE",
+      "SHARED_SUSPICIOUS_DEVICE",
+      "UNUSUAL_LOCATION"
+    ],
+    "recommended_action": "Freeze account and escalate to senior investigator",
+    "cited_sources": [
+      {
+        "document": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK001"
+      },
+      {
+        "document": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK002"
+      }
+    ]
+  }
+}

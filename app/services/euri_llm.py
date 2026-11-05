@@ -15,6 +15,7 @@ from typing import Any
 import httpx
 
 from app.config import Settings, get_settings
+from app.services.network import can_connect_outbound
 
 
 class EuriLLMError(RuntimeError):
@@ -31,6 +32,8 @@ class EuriLLMClient:
 
     async def generate_json(self, user_prompt: str, system_prompt: str | None = None) -> dict[str, Any]:
         """Request a JSON object and reject malformed model output."""
+        if not can_connect_outbound():
+            raise EuriLLMError("Outbound network is restricted or offline.")
         key = self.settings.euri_api_key
         if key is None or not key.get_secret_value().strip():
             raise EuriLLMError("EURI_API_KEY is not configured.")

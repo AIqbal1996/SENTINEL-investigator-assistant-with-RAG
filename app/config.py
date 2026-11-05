@@ -26,6 +26,10 @@ class Settings(BaseSettings):
     neo4j_username: str = "neo4j"
     neo4j_password: SecretStr | None = None
     neo4j_database: str = "neo4j"
+
+    supabase_url: str | None = None
+    supabase_key: SecretStr | None = None
+
     euri_timeout_seconds: float = Field(default=30.0, gt=0, le=120)
     euri_max_retries: int = Field(default=2, ge=0, le=5)
 

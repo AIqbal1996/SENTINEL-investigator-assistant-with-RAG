@@ -1,0 +1,508 @@
+[
+  {
+    "question_id": "Q01",
+    "question": "What is the threshold for enhanced risk scrutiny on high-value transactions?",
+    "expected_document_id": "POL001",
+    "expected_document_name": "Transaction_Amount_Risk_Policy",
+    "retrieved_document_ids": [
+      "POL001",
+      "POL004",
+      "POL001",
+      "POL004",
+      "POL002"
+    ],
+    "is_hit": true,
+    "hit_rank": 1,
+    "latency_seconds": 0.0001,
+    "top_chunks": [
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK001",
+        "text": "Transactions equal to or exceeding $5,000.00 require enhanced risk scrutiny. Investigators must verify customer transaction history, source of funds, and merchant legitimacy before clearance.",
+        "score": 0.9669
+      },
+      {
+        "document_id": "POL004",
+        "document_name": "Geographic_Location_Policy",
+        "chunk_id": "POL004_CHUNK002",
+        "text": "Foreign currency conversions paired with sudden high-value transactions must be reviewed for unauthorized account takeover and identity theft indicators.",
+        "score": 0.9319
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK002",
+        "text": "Single transactions exceeding $10,000.00 mandate immediate supervisor sign-off and step-up customer verification. Funds must remain held until manual review is completed.",
+        "score": 0.8764
+      },
+      {
+        "document_id": "POL004",
+        "document_name": "Geographic_Location_Policy",
+        "chunk_id": "POL004_CHUNK001",
+        "text": "Transactions originating from foreign jurisdictions flagged as high-risk (such as Nigeria, Russia, or Vietnam) without a recorded cardholder travel notice require secondary authorization.",
+        "score": 0.8729
+      },
+      {
+        "document_id": "POL002",
+        "document_name": "Device_Fraud_Policy",
+        "chunk_id": "POL002_CHUNK001",
+        "text": "When a transaction originates from an unrecognized or newly registered device with a risk score exceeding 0.70, the system must trigger a high-risk alert and recommend manual investigator review.",
+        "score": 0.8203
+      }
+    ]
+  },
+  {
+    "question_id": "Q02",
+    "question": "When does an extreme transaction value mandate supervisor sign-off and funds hold?",
+    "expected_document_id": "POL001",
+    "expected_document_name": "Transaction_Amount_Risk_Policy",
+    "retrieved_document_ids": [
+      "POL001",
+      "POL003",
+      "POL001",
+      "POL003",
+      "POL005"
+    ],
+    "is_hit": true,
+    "hit_rank": 1,
+    "latency_seconds": 0.0001,
+    "top_chunks": [
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK002",
+        "text": "Single transactions exceeding $10,000.00 mandate immediate supervisor sign-off and step-up customer verification. Funds must remain held until manual review is completed.",
+        "score": 0.9718
+      },
+      {
+        "document_id": "POL003",
+        "document_name": "Velocity_And_Frequency_Policy",
+        "chunk_id": "POL003_CHUNK002",
+        "text": "Transaction velocity exceeding 10 transactions per hour mandates an immediate automated card block and immediate notification to the primary account holder.",
+        "score": 0.9545
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK001",
+        "text": "Transactions equal to or exceeding $5,000.00 require enhanced risk scrutiny. Investigators must verify customer transaction history, source of funds, and merchant legitimacy before clearance.",
+        "score": 0.9527
+      },
+      {
+        "document_id": "POL003",
+        "document_name": "Velocity_And_Frequency_Policy",
+        "chunk_id": "POL003_CHUNK001",
+        "text": "A transaction velocity exceeding 5 attempts per rolling hour suggests automated bot testing or carding attacks. Investigators must evaluate transaction spacing and decline frequency.",
+        "score": 0.9192
+      },
+      {
+        "document_id": "POL005",
+        "document_name": "Genuine_Transaction_Clearance_Policy",
+        "chunk_id": "POL005_CHUNK001",
+        "text": "Transactions made from established trusted devices with normal spending patterns under $500.00 and low velocity should be auto-cleared with zero customer friction.",
+        "score": 0.8831
+      }
+    ]
+  },
+  {
+    "question_id": "Q03",
+    "question": "What protocol is required when a new device has a high risk score exceeding 0.70?",
+    "expected_document_id": "POL002",
+    "expected_document_name": "Device_Fraud_Policy",
+    "retrieved_document_ids": [
+      "POL002",
+      "POL001",
+      "POL001",
+      "POL002",
+      "POL004"
+    ],
+    "is_hit": true,
+    "hit_rank": 1,
+    "latency_seconds": 0.0,
+    "top_chunks": [
+      {
+        "document_id": "POL002",
+        "document_name": "Device_Fraud_Policy",
+        "chunk_id": "POL002_CHUNK001",
+        "text": "When a transaction originates from an unrecognized or newly registered device with a risk score exceeding 0.70, the system must trigger a high-risk alert and recommend manual investigator review.",
+        "score": 0.9723
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK001",
+        "text": "Transactions equal to or exceeding $5,000.00 require enhanced risk scrutiny. Investigators must verify customer transaction history, source of funds, and merchant legitimacy before clearance.",
+        "score": 0.9151
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK002",
+        "text": "Single transactions exceeding $10,000.00 mandate immediate supervisor sign-off and step-up customer verification. Funds must remain held until manual review is completed.",
+        "score": 0.8764
+      },
+      {
+        "document_id": "POL002",
+        "document_name": "Device_Fraud_Policy",
+        "chunk_id": "POL002_CHUNK002",
+        "text": "Any hardware device ID linked to more than one customer account within a 30-day window indicates potential coordinated fraud syndicate activity. Mandatory freeze on connected accounts.",
+        "score": 0.8448
+      },
+      {
+        "document_id": "POL004",
+        "document_name": "Geographic_Location_Policy",
+        "chunk_id": "POL004_CHUNK001",
+        "text": "Transactions originating from foreign jurisdictions flagged as high-risk (such as Nigeria, Russia, or Vietnam) without a recorded cardholder travel notice require secondary authorization.",
+        "score": 0.8306
+      }
+    ]
+  },
+  {
+    "question_id": "Q04",
+    "question": "What syndicate action is taken when a device is shared across multiple customer accounts?",
+    "expected_document_id": "POL002",
+    "expected_document_name": "Device_Fraud_Policy",
+    "retrieved_document_ids": [
+      "POL002",
+      "POL002",
+      "POL005",
+      "POL001",
+      "POL001"
+    ],
+    "is_hit": true,
+    "hit_rank": 1,
+    "latency_seconds": 0.0001,
+    "top_chunks": [
+      {
+        "document_id": "POL002",
+        "document_name": "Device_Fraud_Policy",
+        "chunk_id": "POL002_CHUNK002",
+        "text": "Any hardware device ID linked to more than one customer account within a 30-day window indicates potential coordinated fraud syndicate activity. Mandatory freeze on connected accounts.",
+        "score": 0.9545
+      },
+      {
+        "document_id": "POL002",
+        "document_name": "Device_Fraud_Policy",
+        "chunk_id": "POL002_CHUNK001",
+        "text": "When a transaction originates from an unrecognized or newly registered device with a risk score exceeding 0.70, the system must trigger a high-risk alert and recommend manual investigator review.",
+        "score": 0.9192
+      },
+      {
+        "document_id": "POL005",
+        "document_name": "Genuine_Transaction_Clearance_Policy",
+        "chunk_id": "POL005_CHUNK001",
+        "text": "Transactions made from established trusted devices with normal spending patterns under $500.00 and low velocity should be auto-cleared with zero customer friction.",
+        "score": 0.9192
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK001",
+        "text": "Transactions equal to or exceeding $5,000.00 require enhanced risk scrutiny. Investigators must verify customer transaction history, source of funds, and merchant legitimacy before clearance.",
+        "score": 0.8894
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK002",
+        "text": "Single transactions exceeding $10,000.00 mandate immediate supervisor sign-off and step-up customer verification. Funds must remain held until manual review is completed.",
+        "score": 0.8831
+      }
+    ]
+  },
+  {
+    "question_id": "Q05",
+    "question": "How many transaction attempts per rolling hour indicate automated bot testing or carding?",
+    "expected_document_id": "POL003",
+    "expected_document_name": "Velocity_And_Frequency_Policy",
+    "retrieved_document_ids": [
+      "POL003",
+      "POL003",
+      "POL001",
+      "POL001",
+      "POL005"
+    ],
+    "is_hit": true,
+    "hit_rank": 1,
+    "latency_seconds": 0.0001,
+    "top_chunks": [
+      {
+        "document_id": "POL003",
+        "document_name": "Velocity_And_Frequency_Policy",
+        "chunk_id": "POL003_CHUNK001",
+        "text": "A transaction velocity exceeding 5 attempts per rolling hour suggests automated bot testing or carding attacks. Investigators must evaluate transaction spacing and decline frequency.",
+        "score": 0.9703
+      },
+      {
+        "document_id": "POL003",
+        "document_name": "Velocity_And_Frequency_Policy",
+        "chunk_id": "POL003_CHUNK002",
+        "text": "Transaction velocity exceeding 10 transactions per hour mandates an immediate automated card block and immediate notification to the primary account holder.",
+        "score": 0.9082
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK002",
+        "text": "Single transactions exceeding $10,000.00 mandate immediate supervisor sign-off and step-up customer verification. Funds must remain held until manual review is completed.",
+        "score": 0.8831
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK001",
+        "text": "Transactions equal to or exceeding $5,000.00 require enhanced risk scrutiny. Investigators must verify customer transaction history, source of funds, and merchant legitimacy before clearance.",
+        "score": 0.8448
+      },
+      {
+        "document_id": "POL005",
+        "document_name": "Genuine_Transaction_Clearance_Policy",
+        "chunk_id": "POL005_CHUNK001",
+        "text": "Transactions made from established trusted devices with normal spending patterns under $500.00 and low velocity should be auto-cleared with zero customer friction.",
+        "score": 0.8355
+      }
+    ]
+  },
+  {
+    "question_id": "Q06",
+    "question": "What automated card blocks occur when transaction velocity exceeds 10 per hour?",
+    "expected_document_id": "POL003",
+    "expected_document_name": "Velocity_And_Frequency_Policy",
+    "retrieved_document_ids": [
+      "POL003",
+      "POL003",
+      "POL001",
+      "POL005",
+      "POL001"
+    ],
+    "is_hit": true,
+    "hit_rank": 1,
+    "latency_seconds": 0.0,
+    "top_chunks": [
+      {
+        "document_id": "POL003",
+        "document_name": "Velocity_And_Frequency_Policy",
+        "chunk_id": "POL003_CHUNK001",
+        "text": "A transaction velocity exceeding 5 attempts per rolling hour suggests automated bot testing or carding attacks. Investigators must evaluate transaction spacing and decline frequency.",
+        "score": 0.9629
+      },
+      {
+        "document_id": "POL003",
+        "document_name": "Velocity_And_Frequency_Policy",
+        "chunk_id": "POL003_CHUNK002",
+        "text": "Transaction velocity exceeding 10 transactions per hour mandates an immediate automated card block and immediate notification to the primary account holder.",
+        "score": 0.9629
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK002",
+        "text": "Single transactions exceeding $10,000.00 mandate immediate supervisor sign-off and step-up customer verification. Funds must remain held until manual review is completed.",
+        "score": 0.8831
+      },
+      {
+        "document_id": "POL005",
+        "document_name": "Genuine_Transaction_Clearance_Policy",
+        "chunk_id": "POL005_CHUNK001",
+        "text": "Transactions made from established trusted devices with normal spending patterns under $500.00 and low velocity should be auto-cleared with zero customer friction.",
+        "score": 0.8831
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK001",
+        "text": "Transactions equal to or exceeding $5,000.00 require enhanced risk scrutiny. Investigators must verify customer transaction history, source of funds, and merchant legitimacy before clearance.",
+        "score": 0.8448
+      }
+    ]
+  },
+  {
+    "question_id": "Q07",
+    "question": "What secondary authorization is required for transactions from high-risk foreign locations?",
+    "expected_document_id": "POL004",
+    "expected_document_name": "Geographic_Location_Policy",
+    "retrieved_document_ids": [
+      "POL004",
+      "POL004",
+      "POL001",
+      "POL002",
+      "POL005"
+    ],
+    "is_hit": true,
+    "hit_rank": 1,
+    "latency_seconds": 0.0001,
+    "top_chunks": [
+      {
+        "document_id": "POL004",
+        "document_name": "Geographic_Location_Policy",
+        "chunk_id": "POL004_CHUNK001",
+        "text": "Transactions originating from foreign jurisdictions flagged as high-risk (such as Nigeria, Russia, or Vietnam) without a recorded cardholder travel notice require secondary authorization.",
+        "score": 0.9584
+      },
+      {
+        "document_id": "POL004",
+        "document_name": "Geographic_Location_Policy",
+        "chunk_id": "POL004_CHUNK002",
+        "text": "Foreign currency conversions paired with sudden high-value transactions must be reviewed for unauthorized account takeover and identity theft indicators.",
+        "score": 0.8729
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK001",
+        "text": "Transactions equal to or exceeding $5,000.00 require enhanced risk scrutiny. Investigators must verify customer transaction history, source of funds, and merchant legitimacy before clearance.",
+        "score": 0.8093
+      },
+      {
+        "document_id": "POL002",
+        "document_name": "Device_Fraud_Policy",
+        "chunk_id": "POL002_CHUNK001",
+        "text": "When a transaction originates from an unrecognized or newly registered device with a risk score exceeding 0.70, the system must trigger a high-risk alert and recommend manual investigator review.",
+        "score": 0.8093
+      },
+      {
+        "document_id": "POL005",
+        "document_name": "Genuine_Transaction_Clearance_Policy",
+        "chunk_id": "POL005_CHUNK001",
+        "text": "Transactions made from established trusted devices with normal spending patterns under $500.00 and low velocity should be auto-cleared with zero customer friction.",
+        "score": 0.8093
+      }
+    ]
+  },
+  {
+    "question_id": "Q08",
+    "question": "How are cross-border foreign currency conversions evaluated for account takeover?",
+    "expected_document_id": "POL004",
+    "expected_document_name": "Geographic_Location_Policy",
+    "retrieved_document_ids": [
+      "POL004",
+      "POL002",
+      "POL004",
+      "POL005",
+      "POL001"
+    ],
+    "is_hit": true,
+    "hit_rank": 1,
+    "latency_seconds": 0.0,
+    "top_chunks": [
+      {
+        "document_id": "POL004",
+        "document_name": "Geographic_Location_Policy",
+        "chunk_id": "POL004_CHUNK002",
+        "text": "Foreign currency conversions paired with sudden high-value transactions must be reviewed for unauthorized account takeover and identity theft indicators.",
+        "score": 0.9584
+      },
+      {
+        "document_id": "POL002",
+        "document_name": "Device_Fraud_Policy",
+        "chunk_id": "POL002_CHUNK002",
+        "text": "Any hardware device ID linked to more than one customer account within a 30-day window indicates potential coordinated fraud syndicate activity. Mandatory freeze on connected accounts.",
+        "score": 0.8306
+      },
+      {
+        "document_id": "POL004",
+        "document_name": "Geographic_Location_Policy",
+        "chunk_id": "POL004_CHUNK001",
+        "text": "Transactions originating from foreign jurisdictions flagged as high-risk (such as Nigeria, Russia, or Vietnam) without a recorded cardholder travel notice require secondary authorization.",
+        "score": 0.8093
+      },
+      {
+        "document_id": "POL005",
+        "document_name": "Genuine_Transaction_Clearance_Policy",
+        "chunk_id": "POL005_CHUNK002",
+        "text": "Investigators must ensure routine domestic purchases at habitual merchants (e.g., groceries, coffee, standard retail) are cleared promptly to maintain customer satisfaction and minimize false alarms.",
+        "score": 0.7417
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK001",
+        "text": "Transactions equal to or exceeding $5,000.00 require enhanced risk scrutiny. Investigators must verify customer transaction history, source of funds, and merchant legitimacy before clearance.",
+        "score": 0.7253
+      }
+    ]
+  },
+  {
+    "question_id": "Q09",
+    "question": "Under what conditions can low-risk purchases from trusted devices be auto-approved?",
+    "expected_document_id": "POL005",
+    "expected_document_name": "Genuine_Transaction_Clearance_Policy",
+    "retrieved_document_ids": [
+      "POL005",
+      "POL002",
+      "POL004",
+      "POL005"
+    ],
+    "is_hit": true,
+    "hit_rank": 1,
+    "latency_seconds": 0.0,
+    "top_chunks": [
+      {
+        "document_id": "POL005",
+        "document_name": "Genuine_Transaction_Clearance_Policy",
+        "chunk_id": "POL005_CHUNK001",
+        "text": "Transactions made from established trusted devices with normal spending patterns under $500.00 and low velocity should be auto-cleared with zero customer friction.",
+        "score": 0.9082
+      },
+      {
+        "document_id": "POL002",
+        "document_name": "Device_Fraud_Policy",
+        "chunk_id": "POL002_CHUNK001",
+        "text": "When a transaction originates from an unrecognized or newly registered device with a risk score exceeding 0.70, the system must trigger a high-risk alert and recommend manual investigator review.",
+        "score": 0.7253
+      },
+      {
+        "document_id": "POL004",
+        "document_name": "Geographic_Location_Policy",
+        "chunk_id": "POL004_CHUNK001",
+        "text": "Transactions originating from foreign jurisdictions flagged as high-risk (such as Nigeria, Russia, or Vietnam) without a recorded cardholder travel notice require secondary authorization.",
+        "score": 0.7253
+      },
+      {
+        "document_id": "POL005",
+        "document_name": "Genuine_Transaction_Clearance_Policy",
+        "chunk_id": "POL005_CHUNK002",
+        "text": "Investigators must ensure routine domestic purchases at habitual merchants (e.g., groceries, coffee, standard retail) are cleared promptly to maintain customer satisfaction and minimize false alarms.",
+        "score": 0.7253
+      }
+    ]
+  },
+  {
+    "question_id": "Q10",
+    "question": "How can investigators prevent false positive alarms on routine household expenditures?",
+    "expected_document_id": "POL005",
+    "expected_document_name": "Genuine_Transaction_Clearance_Policy",
+    "retrieved_document_ids": [
+      "POL005",
+      "POL001",
+      "POL003"
+    ],
+    "is_hit": true,
+    "hit_rank": 1,
+    "latency_seconds": 0.0,
+    "top_chunks": [
+      {
+        "document_id": "POL005",
+        "document_name": "Genuine_Transaction_Clearance_Policy",
+        "chunk_id": "POL005_CHUNK002",
+        "text": "Investigators must ensure routine domestic purchases at habitual merchants (e.g., groceries, coffee, standard retail) are cleared promptly to maintain customer satisfaction and minimize false alarms.",
+        "score": 0.9478
+      },
+      {
+        "document_id": "POL001",
+        "document_name": "Transaction_Amount_Risk_Policy",
+        "chunk_id": "POL001_CHUNK001",
+        "text": "Transactions equal to or exceeding $5,000.00 require enhanced risk scrutiny. Investigators must verify customer transaction history, source of funds, and merchant legitimacy before clearance.",
+        "score": 0.7253
+      },
+      {
+        "document_id": "POL003",
+        "document_name": "Velocity_And_Frequency_Policy",
+        "chunk_id": "POL003_CHUNK001",
+        "text": "A transaction velocity exceeding 5 attempts per rolling hour suggests automated bot testing or carding attacks. Investigators must evaluate transaction spacing and decline frequency.",
+        "score": 0.7253
+      }
+    ]
+  }
+]
